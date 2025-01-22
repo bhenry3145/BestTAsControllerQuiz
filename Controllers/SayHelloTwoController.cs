@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BestTAsControllerQuiz.Models;
 using BestTAsControllerQuiz.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,11 +20,13 @@ namespace BestTAsControllerQuiz.Controllers
         }
 
         [HttpPost]
-        [Route("AddName/{sayHelloToTwo}")]
+        [Route("AddName")]
 
-        public string SayHelloTwo(string sayHelloToTwo)
+        public List<SayHelloTwo> AddName(SayHelloTwo nameToAdd)
         {
-            return _sayHelloTwoServices.SayHelloTwo(sayHelloToTwo);
+            return _sayHelloTwoServices.AddName(nameToAdd);
         }
+
+        
     }
 }

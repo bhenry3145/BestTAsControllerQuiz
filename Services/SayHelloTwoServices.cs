@@ -8,17 +8,17 @@ namespace BestTAsControllerQuiz.Services
 {
     public class SayHelloTwoServices
     {
-        public string sentence = "";
-        public string SayHelloTwo(string sayHelloToTwo)
-        {
-            sentence = "Hello, " + sayHelloToTwo + ".";
-            return sentence;
-        }
 
         public List<SayHelloTwo> people = [
             new SayHelloTwo {personName = "Bowen"},
             new SayHelloTwo {personName = "Juan"},
             new SayHelloTwo {personName = "David"}
         ];
+
+        public List<SayHelloTwo> AddName(SayHelloTwo nameToAdd)
+        {
+            people.Add(nameToAdd);
+            return people;
+        }
     }
 }

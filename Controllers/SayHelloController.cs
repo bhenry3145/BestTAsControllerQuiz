@@ -19,7 +19,7 @@ namespace BestTAsControllerQuiz.Controllers
         }
 
         [HttpPost]
-        [Route("AddName/{sayHelloTo}")]
+        [Route("SayHello/{sayHelloTo}")]
 
         public string SayHello(string sayHelloTo)
         {
