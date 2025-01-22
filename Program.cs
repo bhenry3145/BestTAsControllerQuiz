@@ -8,10 +8,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<AddTwoNumbersController>();
 builder.Services.AddScoped<ReverseItController>();
 builder.Services.AddScoped<SayHelloController>();
 builder.Services.AddScoped<SayHelloTwoController>();
+builder.Services.AddScoped<AddTwoNumbersController>();
+
 
 var app = builder.Build();
 
