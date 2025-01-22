@@ -14,3 +14,5 @@ In SayHello, take in the variable from the route, and return hello + variable.
 Create another endpoint called SayHelloTwo.
 Instead of just using a variable in the route, use a "model" to enter in the name.
 Hint: (new folder/ file, get and set, constructor).
+
+I can't get the dotnet watch run to work, I asked Jacob but all he told me to do was read the error and that didnt help at all.
